@@ -1,0 +1,212 @@
+---
+---
+body, h1, h2, h4 {
+  font-family: 'Raleway', sans-serif;
+}
+
+header {
+  background: #2d2d2d;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  color: #ffffff;
+}
+
+#navbar {
+  display: block;
+  text-align: center;
+  vertical-align: baseline;
+}
+
+#navbar li {
+  display: inline-block;
+  padding: 25px 20px;
+}
+
+#navbar li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.5s ease;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+#navbar li a:hover {
+  color: #6E6B6B;
+}
+
+#backsplash {
+  height: 750px;
+  background-image: url(../images/backsplash2.jpg);
+  background-position: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  height: 750px;
+  background-color: rgba(45, 45, 45, 0.85098);
+}
+
+.intro h2 {
+  font-family: 'raleway', sans-serif;
+  font-size: 3.5em;
+  padding-top: 300px;
+  color: #ffffff;
+  z-index: 500;
+  margin-left: 25%;
+  margin-bottom: 1%;
+}
+
+.intro h4 {
+  font-family: 'raleway', sans-serif;
+  font-size: 1.5em;
+  color: #3498db;
+  z-index: 500;
+  margin-left: 30%;
+}
+.anchor{
+  display: block;
+  height: 66px; /*same height as header*/
+  margin-top: -66px; /*same height as header*/
+  visibility: hidden;
+}
+
+#about-banner {
+  background-color: #3498db;
+  height: 100px;
+  text-align: center;
+}
+
+.about {
+  height: 600px;
+}
+
+#about-banner h2, #projects-banner h2, #contact-banner h2 {
+  color: #ffffff;
+  font-family: 'raleway', sans-serif;
+  font-size: 2em;
+  padding-top: 3%;
+}
+
+  
+.avatar img{
+  margin-top: 10%;
+  margin-left: 10%;
+  padding-right: 5%;
+  border-right: 1px solid black;
+}
+
+#projects-banner {
+  background-color: #e67e22;
+  height: 100px;
+  text-align: center;
+}
+.projects {
+  height: 500px; 
+}
+
+#contact-banner {
+  height: 100px;
+  background-color: #3498db;
+  text-align: center;
+  margin-bottom: 75px;
+}
+
+#name {
+  color: #e67e22;
+  text-decoration: none;
+}
+
+.contact {
+  text-align: center;
+}
+
+.social-icons {
+  display: block;
+  text-align: center;
+  vertical-align: baseline;
+}
+
+.social-icons li {
+  display: inline-block;
+  padding: 25px 20px;
+}
+
+.button-small{
+  color: #fff !important;
+  word-spacing: 0.25em;
+  font-family: 'raleway', sans-serif;
+  text-transform: uppercase;
+  border: none;
+  line-height: 32px;
+  padding: 12px 30px 11px;
+  text-align: center;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  text-decoration: none;
+  background: #3498db;
+}
+
+.site-footer {
+  height: 125px;
+  background: #333333;
+}
+
+.onetaste {
+  margin-left: 15%;
+  width: 26%;
+  float: left;
+}
+
+.onetaste-image {
+  margin: 0 auto;
+  background-image: url(../images/onetaste.png);
+  background-position: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 170px;
+  width: 300px;
+}
+
+.forte {
+  margin-right: 15%;
+  width: 26%;
+  float: right;
+}
+
+.forte-image {
+  margin: 0 auto;
+  background-image: url(../images/forte.png);
+  background-position: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 170px;
+  width: 300px;
+  border: 1px solid lightgray;
+}
+
+.forte h2,
+.onetaste h2 {
+  margin: 20% auto 10% auto;
+  font-size: 2em;
+  font-family: "raleway", sans-serif;
+  text-align: center;
+}
+
+.forte p,
+.onetaste p {
+  width: 90%;
+  line-height: 125%;
+  font-style: italic;
+  font-family: "raleway", sans-serif;
+  margin: 20px auto 40px auto;
+}
+
+
+
+
+
