@@ -50,7 +50,7 @@
 		cursor: pointer;
 		} 
 	@media screen and (max-width: 850px) {
-		.reveal-modal.small {
+		.reveal-modal {
 			width: 400px; !important;
  			top: 0px !important;
  			left: 0px !important;
