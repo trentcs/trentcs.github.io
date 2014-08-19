@@ -51,7 +51,7 @@
 		} 
 	@media screen and (max-width: 850px) {
 		.reveal-modal {
-			width: 350px; !important;
+			width: 200px; !important;
  			top: 0px !important;
  			left: 0px !important;
  			margin: 0px !important;
