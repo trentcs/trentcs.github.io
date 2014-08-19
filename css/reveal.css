@@ -49,9 +49,9 @@
 		font-weight: bold;
 		cursor: pointer;
 		} 
-	@media only screen and (max-width: 850px) {
+	@media screen and (max-width: 850px) {
 		.reveal-modal.small {
-			width: 100% !important;
+			width: 400px; !important;
  			top: 0px !important;
  			left: 0px !important;
  			margin: 0px !important;
