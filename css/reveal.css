@@ -49,11 +49,16 @@
 		font-weight: bold;
 		cursor: pointer;
 		} 
-	@media screen and (max-width: 850px){
-		.reveal-modal {
-			width: 400px;
+	@media only screen and (max-width: 850px) {
+		.reveal-modal.xlarge {
+			width: 100% !important;
+ 			top: 0px !important;
+ 			left: 0px !important;
+ 			margin: 0px !important;
+ 			padding: 0px !important;
 		}
 	}
+}
 	/*
 		
 	NOTES
