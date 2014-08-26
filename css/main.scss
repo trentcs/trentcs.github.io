@@ -220,7 +220,7 @@ header {
 
 @media screen and (max-width: 850px){
   #navbar li {
-    padding: 5px 5px;
+    padding: 15px 10px;
   }
   .about {
     height: 100%;
@@ -237,10 +237,11 @@ header {
     padding: 0;
   }
   .aboutme {
-    width: 100%;
-    margin-left: 0;
+    width: 90%;
+    margin-left: 5%;
     margin-right: 0;
     margin-bottom: 5%;
+    text-align: left;
     float: none;
   }
   .onetaste {
@@ -271,6 +272,10 @@ header {
   }
   #backsplash {
     background-position: 50% 0%;
+  }
+  #about-banner h2, #projects-banner h2, #contact-banner h2 {
+    font-size: 2em;
+    padding-top: 6%;
   }
 }
 
