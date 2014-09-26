@@ -89,6 +89,8 @@
 					}
 				}
 				modal.unbind('reveal:open');
+				$("body").css("overflow", "hidden");
+				
 			}); 	
 
 			//Closing Animation
@@ -120,6 +122,7 @@
 					}		
 				}
 				modal.unbind('reveal:close');
+				$("body").css("overflow", "");
 			});     
    	
 /*---------------------------
