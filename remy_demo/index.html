@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gyroscope Demo</title>
+    <script src="https://cdn1.raptmedia.com/system/scripts/api.v2.min.js.gz"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header id="logo">Gyro Demo</header>
+
+    <iframe src="//cdn1.raptmedia.com/projects/RyP5lGxi/embed?autoplay=false&controls=overlay" width=720 height=405 name="RemyMartinGyroscopeProject" scrolling=no frameborder=0 marginheight=0 marginwidth=0 webkitallowfullscreen=true mozallowfullscreen=true allowfullscreen=true><p style="text-align:center">Iframes are required to view this content.</p></iframe>
+
+    <footer>&copy; 2014 Rapt Media</footer>
+
+
+<script type="text/javascript" src="https://cdn.rawgit.com/alexgibson/shake.js/master/shake.js"></script>
+<script>  
+    raptor.api.on("ready", function(event, el){
+        raptor.settings("defaultIFrame", el.name);       
+    });
+    raptor.api.on("inboundReady", function(event, data){
+        console.log("inbound commands ready");
+    });
+
+
+    //listen to shake event
+    var shakeEvent = new Shake({threshold: 2});
+
+    //start listening
+    function startShake(){
+        shakeEvent.start();
+    }
+    
+    window.addEventListener('shake', spillDrink, false);
+
+    //stop listening
+    function stopShake(){
+        shakeEvent.stop();
+    }
+
+    //jump to fail node on device shake
+    function spillDrink(){
+        var failNodes = [193245, 193244]
+        var randoNode = failNodes[Math.floor(Math.random() * failNodes.length)];
+        raptor.api.setNode(randoNode);
+        raptor.api.play();
+        stopShake();
+    }
+
+    //listen for shake event between userTimed events
+    raptor.api.on('userTimed', function(el, data){
+       if(data.name === 'startListener'){
+        startShake();
+       }
+       else if(data.name === 'stopListener'){
+        stopShake();
+       }
+    })
+
+    //check if shake is supported or not.
+    if(!("ondevicemotion" in window)){alert("Not Supported");}
+</script>
+</body>
+</html>
